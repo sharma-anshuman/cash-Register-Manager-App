@@ -44,6 +44,7 @@ function clickHandler(){
             if(currNoteCount){
                 rowCells0[i+1].style.textDecoration = "underline";
                 rowCells[i+1].style.fontWeight = "bold";
+                rowCells[i+1].style.fontSize = "larger";
             }
         }
     }
