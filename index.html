@@ -9,15 +9,24 @@
     <title>Cash Register</title>
 </head>
 <body>
-    <h1>Cash Register Manager</h1>
-    <p>Enter the Bill value and Cash given to know the change denominations</p>
-    <h3>Enter the bill amount</h3>
-    <input class="billAmount" type="number">
-    <h3>Enter the cash given</h3>
-    <input class="cashGiven" type="number">
-    <br>
-    <button id="button-check">Check</button>
 
+    <nav class="navi">
+        <div class="header">Cash Register Manager</div>
+    </nav>
+
+    <!-- <h1>Cash Register Manager</h1> -->
+
+    <h2>Enter the Bill value and Cash given to know the change denominations</h2>
+    <div class="main-body">
+        <h3 class="alert-line"></h3>
+        <h3>Enter the bill amount</h3>
+        <input class="billAmount" type="number">
+        <h3>Enter the cash given</h3>
+        <input class="cashGiven" type="number">
+        <br>
+        <button id="button-check">Check</button>
+    </div>
+    
     <table class="change-table">
         <tr>
             <td class="cell-1">Notes</td>
@@ -46,6 +55,13 @@
             <td></td>
         </tr>
     </table>
+
+    <footer>
+        <div style="font-size: 165%; text-decoration: underline;">About</div>
+        <p>Cash Change Manager which tells you the count of all the denominations of Indian Currency which you (as a vendor) need to give back!!</p>
+        <p>© Copyright 2022 Cash Register Manager, Inc. All rights reserved</p>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

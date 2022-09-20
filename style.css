@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&family=Inconsolata&family=Kalam&display=swap');
+
 input{
     border-radius: 15px;
     text-align: center;
@@ -7,8 +9,9 @@ input{
 }
 
 body{
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
     text-align: center;
-    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -22,6 +25,7 @@ button{
 }
 
 td{
+    /* font-weight: bold; */
     width: 6rem;
     border: 1px solid black;
     padding: 0.3rem;
@@ -32,10 +36,82 @@ td{
 }
 
 .change-table{
-    margin-top: 2rem;
+    margin-top: 2.6rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 80%;
+    max-width: 70%;
     text-align: left;
     border-collapse: collapse;
+}
+
+
+/* Further styling */
+
+.header{
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+    background-color: #2563eb;
+    max-width: 100%;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+h3{
+    text-decoration: dashed;
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.main-body{
+    padding: 1rem;
+    background-color: #f3f4f6;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.6rem;
+}
+
+#button-check {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.1s;
+  }
+  
+  #button-check:hover {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  footer{
+    padding: 2rem;
+    padding-bottom: 0.2rem;
+    margin-top: 2.6rem;
+    padding-top: 1rem;
+    background-color: #2563eb;
+    text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+footer p{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alert-line{
+    color: red;
+    margin-top: -0.3rem;
 }
