@@ -10,6 +10,7 @@ function clickHandler(){
     var bill = billAmount.value;
     var diff = given - bill;
     var rowCells = document.querySelector(".change-table").rows[1].cells;
+    var rowCells0 = document.querySelector(".change-table").rows[0].cells;
     if(given.toString().length == 0 || bill.toString().length == 0){
         alertLine.innerHTML = "!Error: Kindly Enter all the values";
     }
@@ -17,7 +18,7 @@ function clickHandler(){
         alertLine.innerHTML = "!Error: Bill Amount can not be 0";
     }
     else if(diff<0){ 
-        alertLine.innerHTML = "!Error: Sorry you can't proceed as you don't have enough money!!";
+        alertLine.innerHTML = "!Error: You can't proceed because of insufficient balance!!";
     }
     else if(given<0 || bill<0){
         alertLine.innerHTML = "!Error: Either values can't be negative";
@@ -33,6 +34,7 @@ function clickHandler(){
             diff = diff%change[i];
             rowCells[i+1].innerHTML = currNoteCount;
             if(currNoteCount){
+                rowCells0[i+1].style.textDecoration = "underline";
                 rowCells[i+1].style.fontWeight = "bold";
             }
         }
