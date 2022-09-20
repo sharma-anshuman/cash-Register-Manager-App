@@ -2,7 +2,7 @@ input{
     border-radius: 15px;
     text-align: center;
     padding: 0.1rem;
-    height: 1.5rem;
+    height: 1.7rem;
     font-size: large;
 }
 
@@ -14,19 +14,14 @@ body{
 }
 
 button{
+    margin: 2rem 0px;
     padding: 0.5rem 0.9rem;
     border-radius: 20px;
     cursor: pointer;
     font-size: large;
-    margin: 2rem 0px;
 }
 
-
-tr{
-    margin: 1rem;
-}
-
-.cell{
+td{
     width: 6rem;
     border: 1px solid black;
     padding: 0.3rem;
@@ -36,7 +31,7 @@ tr{
     width: 9rem;
 }
 
-.change-table {
+.change-table{
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
