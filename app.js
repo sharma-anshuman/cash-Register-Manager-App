@@ -11,6 +11,14 @@ function clickHandler(){
     var diff = given - bill;
     var rowCells = document.querySelector(".change-table").rows[1].cells;
     var rowCells0 = document.querySelector(".change-table").rows[0].cells;
+
+    for(var i = 0; i<10; i++){
+        rowCells0[i+1].style.textDecoration = "none";
+        rowCells[i+1].style.fontWeight = "normal";
+        rowCells[i+1].innerHTML = "";
+
+    }
+
     if(given.toString().length == 0 || bill.toString().length == 0){
         alertLine.innerHTML = "!Error: Kindly Enter all the values";
     }
